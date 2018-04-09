@@ -9,14 +9,14 @@ namespace finanzas.Models.AccountViewModels
     public class LoginViewModel
     {
         [Required]
-        [EmailAddress]
-        public string Email { get; set; }
+        [Display(Name = "Usuario")]
+        public string UserName { get; set; }
 
         [Required]
         [DataType(DataType.Password)]
         public string Password { get; set; }
 
-        [Display(Name = "Remember me?")]
+        [Display(Name = "Recuérdame")]
         public bool RememberMe { get; set; }
     }
 }

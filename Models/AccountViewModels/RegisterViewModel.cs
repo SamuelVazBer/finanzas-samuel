@@ -9,6 +9,10 @@ namespace finanzas.Models.AccountViewModels
     public class RegisterViewModel
     {
         [Required]
+        [Display(Name = "Usuario")]
+        public string UserName { get; set; }
+        
+        [Required]
         [EmailAddress]
         [Display(Name = "Email")]
         public string Email { get; set; }
@@ -21,7 +25,7 @@ namespace finanzas.Models.AccountViewModels
 
         [DataType(DataType.Password)]
         [Display(Name = "Confirm password")]
-        [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
+        [Compare("Password", ErrorMessage = "El password no coincide")]
         public string ConfirmPassword { get; set; }
     }
 }

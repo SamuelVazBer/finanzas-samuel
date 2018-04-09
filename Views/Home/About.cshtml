@@ -1,7 +1,12 @@
 ﻿@{
-    ViewData["Title"] = "About";
+    ViewData["Title"] = "Consultar Simbolo";
 }
 <h2>@ViewData["Title"]</h2>
 <h3>@ViewData["Message"]</h3>
 
-<p>Use this area to provide additional information.</p>
+<form action="/quote" method="post">
+        <div class="form-group">
+            <input autocomplete="off" autofocus="" class="form-control" name="symbol" placeholder="Simbolo" type="text">
+        </div>
+        <button class="btn btn-primary" type="submit">Consultar</button>
+    </form>

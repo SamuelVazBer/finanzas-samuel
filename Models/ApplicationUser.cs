@@ -12,6 +12,6 @@ namespace finanzas.Models
     {
 
         
-        public Decimal Efectivo { get; set; }
+        public decimal? Efectivo { get; set; }
     }
 }
