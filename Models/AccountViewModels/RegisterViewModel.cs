@@ -24,7 +24,7 @@ namespace finanzas.Models.AccountViewModels
         public string Password { get; set; }
 
         [DataType(DataType.Password)]
-        [Display(Name = "Confirm password")]
+        [Display(Name = "Confirmar password")]
         [Compare("Password", ErrorMessage = "El password no coincide")]
         public string ConfirmPassword { get; set; }
     }

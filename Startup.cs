@@ -40,10 +40,8 @@ namespace finanzas
                     cfg.Password.RequiredLength = 3;
                     cfg.Password.RequireNonAlphanumeric = false;
                     cfg.Password.RequireLowercase = false;
-                    cfg.Password.RequireUppercase = false;
-
-
-
+                    cfg.Password.RequireUppercase = false;        
+        
                 }
             )
                 .AddEntityFrameworkStores<ApplicationDbContext>()
