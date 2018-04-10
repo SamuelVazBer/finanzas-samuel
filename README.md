@@ -7,19 +7,19 @@ Implemente un sitio web a través del cual los usuarios puedan "comprar" y "vend
 # Especificación
 ## IEX API
 Para obtener los valores de las acciones utilizaremos [API](https://iextrading.com/developer/docs/#stocks)
-ej. para appl que es el simbolo de Apple
+ej. para appl que es el símbolo de Apple
 
 https://api.iextrading.com/1.0/stock/aapl/batch?types=quote,logo,chart
 
 ````
 URL base: https://api.iextrading.com/1.0/stock/
-Simbolo : appl (sustituir por el simbolo deseado)
+símbolo : appl (sustituir por el símbolo deseado)
 Opciones :/batch?types=quote,logo,chart
 ````
 ## Consultar
 Complete la implementación de consultar de tal manera que le permita al usuario buscar el precio actual de una acción.
 
-Requerir que un usuario ingrese el símbolo de una acción, implementado como un campo de texto que llamado simbolo.
+Requerir que un usuario ingrese el símbolo de una acción, implementado como un campo de texto que llamado símbolo.
 
 Envíe la entrada del usuario al contralodaor correpondiente
 
@@ -28,7 +28,7 @@ Envíe la entrada del usuario al contralodaor correpondiente
 ## Comprar
 Complete la implementación de comprar de tal manera que permita a un usuario comprar acciones.
 
-Requerir que un usuario ingrese el símbolo de una acción, implementado como un campo de texto que nombrado simbolo. Haga una disculpa si la entrada está en blanco o si el símbolo no existe (según el valor de retorno de la API).
+Requerir que un usuario ingrese el símbolo de una acción, implementado como un campo de texto que nombrado símbolo. Haga una disculpa si la entrada está en blanco o si el símbolo no existe (según el valor de retorno de la API).
 
 Requerir que un usuario ingrese un número de acciones, implementado como un campo de numerico llamado cantidad. Haga una disculpa si la entrada no es un entero positivo.
 
@@ -54,7 +54,7 @@ Las probabilidades son que querrás ejecutar múltiples SELECTs. Dependiendo de 
 ## Vender
 Complete la implementación de vender de tal manera que permita a un usuario vender acciones de una acción (que él o ella posee).
 
-Requerir que un usuario ingrese el símbolo de una acción, implementado como un menú llamado simbolo. Haga una disculpa si el usuario no selecciona una acción o si (de alguna manera, una vez enviado) el usuario no posee ninguna acción de esa acción.
+Requerir que un usuario ingrese el símbolo de una acción, implementado como un menú llamado símbolo. Haga una disculpa si el usuario no selecciona una acción o si (de alguna manera, una vez enviado) el usuario no posee ninguna acción de esa acción.
 
 Requerir que un usuario ingrese un número de acciones, implementado como un campo de numerico llamado cantidad. Haga una disculpa si la entrada no es un entero positivo o si el usuario no posee tantas acciones del stock.
 
